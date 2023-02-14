@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (rep, res) => {
+app.get("/", (req, res) => {
     res.json({message: "Wellcom to contact book application."});
 
 });
